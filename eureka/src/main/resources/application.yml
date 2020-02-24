@@ -1,0 +1,12 @@
+server:
+  port: 20000
+spring:
+  application:
+    name: eureka-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:20000/eureka
+    fetch-registry: false
+    #自我注册
+    register-with-eureka: true
